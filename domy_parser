@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp;
+xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "employee.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var x, i, txt, xmlDoc; 
+    xmlDoc = xml.responseXML;
+    txt = "";
+    x = xmlDoc.getElementsByTagName("Emp-name")
+    
+   
+        
+    for (i = 0; i < x.length; i++) { 
+          
+        txt += x[i].childNodes[0].nodeValue + "<br>";
+       
+    }
+    
+  
+    
+
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<employees>
+   
+<employee>
+<Emp-id>01</Emp-id>
+    <Emp-name>Rajesh PV</Emp-name>
+    <Emp-age>65</Emp-age>
+    <Emp-salary>500000</Emp-salary>
+    <Emp-email>pvr@gmail.com</Emp-email>
+    <Emp-phone>8618897671</Emp-phone>
+    <Emp-role>Manager</Emp-role>
+
+</employee>
+
+<employee>
+<Emp-id>02</Emp-id>
+    <Emp-name>Rakesh PV</Emp-name>
+    <Emp-age>32</Emp-age>
+    <Emp-salary>100000</Emp-salary>
+    <Emp-email>rak@gmail.com</Emp-email>
+    <Emp-phone>8618845871</Emp-phone>
+    <Emp-designation>Assistant Manager</Emp-designation>
+
+</employee>
+
+
+<employee>
+<Emp-id>03</Emp-id>
+    <Emp-name>maldon</Emp-name>
+    <Emp-age>34</Emp-age>
+    <Emp-salary>800000</Emp-salary>
+    <Emp-email>conq@gmail.com</Emp-email>
+    <Emp-phone>8547123659</Emp-phone>
+    <Emp-role>Division Manager</Emp-role>
+</employee>
+
+
+<employee>
+<Emp-id>04</Emp-id>
+    <Emp-name>gayatri S</Emp-name>
+    <Emp-age>28</Emp-age>
+    <Emp-salary>70000</Emp-salary>
+    <Emp-email>gayatri@gmail.com</Emp-email>
+    <Emp-phone>8745963140</Emp-phone>
+    <Emp-role>HR manager</Emp-role>
+
+</employee>
+
+<employee>
+<Emp-id>05</Emp-id>
+    <Emp-name>rahul</Emp-name>
+    <Emp-age>40</Emp-age>
+    <Emp-salary>75000</Emp-salary>
+    <Emp-email>rahul@gmail.com</Emp-email>
+    <Emp-phone>9916548048</Emp-phone>
+    <Emp-role>Chief Mechanic</Emp-role>
+</employee>
+
+
+
+<employee>
+<Emp-id>06</Emp-id>
+    <Emp-name>sanchitha</Emp-name>
+    <Emp-age>42</Emp-age>
+    <Emp-salary>90000</Emp-salary>
+    <Emp-email>sanchu@gmail.com</Emp-email>
+    <Emp-phone>9916545248</Emp-phone>
+    <Emp-role>secretary</Emp-role>
+</employee>
+
+
+<employee>
+<Emp-id>07</Emp-id>
+    <Emp-name>poorna</Emp-name>
+    <Emp-age>35</Emp-age>
+    <Emp-salary>58000</Emp-salary>
+    <Emp-email>poorna@gmail.com</Emp-email>
+    <Emp-phone>8562031479</Emp-phone>
+    <Emp-role>Vice secretary</Emp-role>
+</employee>
+
+
+<employee>
+<Emp-id>08</Emp-id>
+    <Emp-name>reddy</Emp-name>
+    <Emp-age>42</Emp-age>
+    <Emp-salary>60000</Emp-salary>
+    <Emp-email>reddy@gmail.com</Emp-email>
+    <Emp-phone>7895412630</Emp-phone>
+    <Emp-role>zonal incharge</Emp-role>
+    </employee>
+</employees>
+
+<!DOCTYPE html>
+  
+<head>
+    <title>employee details</title>
+  
+    <!-- CSS -->
+    <style>
+
+
+
+h1{
+  color: #484848;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  content: "'";
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+/*made with ❤, by qpi65*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+  
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+  
+        tr:nth-child(even) {
+            background-color:lightcyan;
+        }
+        tr:nth-child(odd) {
+            background-color:lightgray;
+        }
+        th {
+            background-color:black;
+            color:greenyellow;
+        }
+  
+        .button {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            border: 4px solid grey;
+            background: rgba(20, 192, 4, 0.5);
+            color: rgb(230, 36, 78);
+            outline: none;
+            border-radius: 30px;
+            font-size: 30px;
+            width: 500px;
+  
+        }
+
+   
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size:  20px;;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+    </style>
+  
+    <!--JavaScript-->
+    <script>
+
+
+var xmlDoc;
+var table;
+var x;
+
+
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+  
+                // Request finished and response 
+                // is ready and Status is "OK"
+                if (this.readyState == 4 && this.status == 200) {
+                    empDetails(this);
+                }
+            };
+  
+            // employee.xml is the external xml file
+            xmlhttp.open("GET", "employee.xml", true);
+            xmlhttp.send();
+        }
+  
+        function empDetails(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table =
+                `<tr><th>id</th><th>name</th>
+                    <th>age</th><th>salary</th>
+                    <th>email</th><th>phone</th>
+                </tr>`;
+                
+                
+            var x = xmlDoc.getElementsByTagName("employee");
+            
+  
+            // Start to fetch the data by using TagName 
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("Emp-id")[0]
+                    .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("Emp-name")[0]
+                    .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("Emp-age")[0]
+                    .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("Emp-salary")[0]
+                    .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("Emp-email")[0]
+                    .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("Emp-phone")[0]
+                    .childNodes[0].nodeValue + "</td></tr>";
+                    
+                   
+            }
+  
+            // Print the xml data in table form
+            document.getElementById("id").innerHTML = table;
+        }
+
+
+
+//////////////////////////////////////////////////////////////
+  function removecus() {
+  
+
+  var index,
+    table = document.getElementById("id");
+
+  for (var i = 0; i < table.rows.length; i++) {
+    table.rows[i].onclick = function () {
+      index = this.rowIndex;
+
+      x = xmlDoc.getElementsByTagName("employee")[index - 1];
+      xmlDoc.documentElement.removeChild(x);
+      console.log(xmlDoc);
+      displayTable(xmlDoc);
+    };
+  }
+  alert("This customer detail removed!");
+}        
+//////////////////////////////////////////////////////////////////////////
+
+function removeNodeElement() {
+  var i;
+  var x;
+
+
+  for (i = 0; i < x.length; i++) {
+    a = xmlDoc
+      .getElementsByTagName("employees")
+      [i].getElementsByTagName("Emp-age")[0];
+    b = a.childNodes[0];
+    a.removeChild(b);
+  }
+  console.log(xmlDoc);
+  table = `<tr><th>id</th><th>name</th>
+                    <th>age</th><th>salary</th>
+                    <th>email</th><th>phone</th>
+                </tr>`;
+var some = xmlDoc;
+x = xmlDoc.getElementsByTagName("employees");
+
+for (i = 0; i < x.length; i++) {
+table +=
+"<tr><td>" +
+x[i].getElementsByTagName("Emp-id")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-name")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-salary")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-email")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-phone")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-designation")[0].childNodes[0].nodeValue +
+"</td><td><button onclick='removecus()'> remove </button></td></tr>";
+}
+document.getElementById("id").innerHTML = table;
+  alert('The node element  "age" has been removed!');
+
+  
+}
+
+///////////////////////////////////////////////////////////////
+
+function addNewElement() {
+  var i;
+  var xmlDoc;
+  newEle = xmlDoc.createElement("country");
+  newText = xmlDoc.createTextNode("INDIA");
+  newEle.appendChild(newText);
+  xmlDoc.getElementsByTagName("employee")[0].appendChild(newEle);
+  console.log(xmlDoc);
+  alert('The new node element "Country" has been added to the second node!');
+  var table = `<thead><tr>
+    <th>id</th><th>name</th>
+                    <th>age</th><th>salary</th>
+                    <th>email</th><th>phone</th>
+                    <th>designation</th><th>country</th>
+          
+         <th>Remove customer</th>
+        </tr></thead>`;
+
+  x = xmlDoc.getElementsByTagName("employee");
+
+  for (i = 0; i < x.length; i++) {
+    table +=
+      "<tr><td>" +
+        x[i].getElementsByTagName("Emp-id")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-name")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-salary")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-email")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-phone")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[i].getElementsByTagName("Emp-designation")[0].childNodes[0].nodeValue +"</td><td>"
+
+x[i].getElementsByTagName("Emp-country")[0].childNodes[0].nodeValue +
+      
+      "</td><td><button onclick='removecus()'> remove </button></td></tr>";
+  }
+  document.getElementById("id").innerHTML = table;
+}
+  
+function changeNodeValue() 
+{
+  var j;
+  for (j = 0; j < x.length; j++) {
+    xmlDoc
+      .getElementsByTagName("employee")
+      [j].getElementsByTagName("country")[0].childNodes[0].nodeValue = "canada";
+  }
+  console.log(xmlDoc);
+  alert("The country has been changedn to canada");
+  displayTable(xmlDoc);
+}
+
+
+
+</script>
+</head>
+  
+<body bgcolor="black">
+    
+
+    <center><h1><span>PHO</span>E<span>NIX</span></h1> <span><div class="typing-demo" style="color: #fff;">
+        Market City</div></span></center>
+<br><br><br>
+
+<h3 style="color: aqua;"><center>EMPLOYEE DETAILS</center></h3>
+<br><br>
+
+        
+      
+<input type="button" value="show all data" onclick="loadXMLDoc()"></button>
+<input type="button" value="remove" onclick="removecus()"></button>
+<button   onclick = "removeNodeElement()">Remove age column</button>
+<button  class="btn btn-success" onclick = "addNewElement()">Add new column</button>
+        
+     
+
+        
+    
+       
+        
+
+   
+    
+      
+    <br><br>
+    <table id="id"></table>
+</body>
+  
+</html>
