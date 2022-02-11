@@ -1,0 +1,10 @@
+{"employees":[
+    {"full_name":"Page Cabrera","gender":"male","email":"pagecabrera@imkan.com","phone":"+91 8618897671","age":"40","designation":"secretary","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"},
+    {"full_name":"Macdonald Rosales","gender":"ale","email":"macdonaldrosales@affluex.com","phone":"+91 7531548920","age":"21","designation":"gen secretary","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"},
+    {"full_name":"Cash Marsh","gender":"male","email":"cashmarsh@remold.com","phone":"91 8541026973","age":"31","designation":"manager","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"},
+    {"full_name":"Ofelia Cooley","gender":"female","email":"ofeliacooley@geeketron.com","phone":"+91 9574100863","age":"39","designation":"general manager","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","total salary":"52000","doa":"31/01/2022"},
+    {"full_name":"Erma Chase","gender":"female","email":"ermachase@megall.com","phone":"+91 8845963110","age":"21","designation":"HR MANAGER","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"},
+    {"full_name":"Maryanne Mullins","gender":"female","email":"maryannemullins@olucore.com","phone":"+91 9988741250","age":"33","designation":"ACCOUNT manager","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"},
+    {"full_name":"Christina Dickerson","gender":"female","email":"christinadickerson@halap.com","phone":"+91 8541203997","age":"21","designation":"ChIEF EXEVUTIVE","basicsalary":"45000","allowance":"2000","medicalexpense":"2000","totalsalary":"52000","doa":"31/01/2022"}
+    
+]}
