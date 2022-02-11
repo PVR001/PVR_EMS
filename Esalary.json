@@ -1,0 +1,10 @@
+{"employees":[
+    {"full_name":"Page Cabrera","id":"121","bs":"40000","me":"2000","allow":"1000","salary":"45000","designation":"secretary","doa":"16/12/2022"},
+    {"full_name":"Macdonald Rosales","id":"142","bs":"60000","me":"2000","allow":"1000","salary":"55000","designation":" Vice secretary","doa":"16/12/2022"},
+    {"full_name":"Cash Marsh","id":"201","bs":"80000","me":"2000","allow":"1000","salary":"85000","designation":"Chief manager","doa":"16/12/2022"},
+    {"full_name":"Ofelia Cooley","id":"854","bs":"30000","me":"2000","allow":"1000","salary":"48000","designation":"manager","doa":"16/12/2022"},
+    {"full_name":"Erma Chase","id":"112","bs":"40000","me":"2000","allow":"1000","salary":"45000","designation":" HR MANAger","doa":"16/12/2022"},
+    {"full_name":"Maryanne Mullins","id":"214","bs":"40000","me":"2000","allow":"1000","salary":"45000","designation":"AACOUNT managEr","doa":"16/12/2022"}
+  
+    
+]}
